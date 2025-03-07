@@ -9,7 +9,12 @@
 
         </style>
 
-        <script type = "text/javascript"></script>
+        <script type = "text/javascript">
+        var redirect = function() {
+            console.log("you are on"+location.href)
+            location.href ="practice.html"
+        }
+        </script>
 
 
 
@@ -24,8 +29,8 @@
                     </label>
                 </td>
                 <td>
-                    <button class="Button">Right Items</button>
-                </td>
+                    <button class="Button" onclick="redirect()">Right Items</button>
+                </td> 
             </tr>
         </table>
     </body>
