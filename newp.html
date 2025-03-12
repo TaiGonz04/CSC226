@@ -4,6 +4,7 @@
     <title>Practice Search Tab</title>
     <script type = "text/javascript">
         function alertTheUser() {
+            alert(1)
 
         }
     </script>
@@ -31,9 +32,12 @@
   <body>
     <iframe id="backgroundImage" src="chrome-untrusted://new-tab-page/custom_background_image?url=https%3A%2F%2Flh6.googleusercontent.com%2Fproxy%2FeIsCq-W1-05xqnbn_cv4iC7ZMwY2jJLq46tZasOrhSsrEsw2sQ9Stshcupp1r-d4_5ACgJNOne6SPUJzdw9BDa7laxrQUt-AfS9WAoCcfjg%3Dw3840-h2160-p-k-no-nd-mv"></iframe>
     <ntp-app></ntp-app>
-    <input type="text">
-    <br>
-    <input type = "email">
+    <form>
+        <input type="text">
+        <br>
+        <input type = "email" required>
+        <input type = "submit">
+    </form>
     <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
     <link rel="stylesheet" href="chrome://theme/colors.css?sets=ui,chrome">
     <link rel="stylesheet" href="shared_vars.css">
