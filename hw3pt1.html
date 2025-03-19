@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     input{ 
-        width: 1000px
+        width: 50px
     }
 
 </style>
 
 <script type = "text/javascript">
+    <input type ="button" id = "buttonInput"/>
+    let myInput = document.getElementById("buttonInput");
+
+    if (myInput) {
+    myInput.addEventListener("click", alertTheUser);
+    }
+
+    function alertTheUser(){
+        alert("You pressed the button!")
+    }
 </script>
 </head>
 
 <body>
     <form>
         <input type ="checkbox" id="checkbox-input"><br>
-        <input type ="button" id="button-input" value = "Click Me!">
+        <input type ="button" id="buttonInput" value = "Click Me!">
         <!--number 4 of the hw is confusing me-->
     </form>
 </body>
 </html>
+<!--id,class, tag are the ways to get query selector-->
