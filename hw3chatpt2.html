@@ -1,0 +1,62 @@
+<!--Created by Chatgpt-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input, Styling, and Button Example</title>
+    <style>
+        /* Style the input field */
+        input {
+            width: 50%; /* Set the width of the input field to 50% */
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Style the button */
+        button {
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Input of different types -->
+    <input type="text" id="user-input" placeholder="Enter some text">
+
+    <!-- Button with an ID to trigger JavaScript -->
+    <button id="submit-btn">Submit</button>
+
+    <!-- Placeholder for the output -->
+    <div id="output"></div>
+
+    <!-- JavaScript Function -->
+    <script>
+        // Function to be called when the button is clicked
+        document.getElementById('submit-btn').onclick = function() {
+            // a) Show what the user entered in the input
+            var userInput = document.getElementById('user-input').value;
+            alert("You entered: " + userInput);  // This will display the input in an alert box
+            
+            // b) Change the style of the input field (e.g., changing the background color)
+            var inputField = document.getElementById('user-input');
+            inputField.style.backgroundColor = '#f0f8ff'; // Change the background color to light blue
+            inputField.style.borderColor = '#00bfff'; // Change the border color to deep sky blue
+
+            // Show the input in a div on the page as well
+            document.getElementById('output').innerText = "You entered: " + userInput;
+        };
+    </script>
+
+</body>
+</html>
