@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         input {
-            width: 50%; /* Set the input width to 50% */
+            width: 50%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
@@ -24,24 +24,20 @@
 
             let myButton = document.getElementById("buttonInput");
 
-            // Check if button exists
             if (myButton) {
                 myButton.addEventListener("click", function() {
                     let userInput = document.getElementById("user-input").value;
                     
-                    // Check if user input exists
                     if (userInput) {
                         alert("You entered: " + userInput);
 
-                        // Change the style of the input field
                         let inputField = document.getElementById("user-input");
-                        inputField.style.backgroundColor = "#f0f8ff"; // Light blue
-                        inputField.style.borderColor = "#00bfff"; // Deep sky blue
+                        inputField.style.backgroundColor = "#ffae00";
+                        inputField.style.borderColor = "#ffd500";
 
-                        // Display the input value in the output div
-                        document.getElementById("output").innerText = "You entered: " + userInput;
+                        document.getElementById("output").innerText = userInput;
                     } else {
-                        alert("Please enter something!");
+                        alert("ERROR! Please enter something!");
                     }
                 });
             }
